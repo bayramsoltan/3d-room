@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Bayram's 3D Room</title>
+  <link rel="icon" type="image/x-icon" href="data:image/png;base64,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">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="house" id="h"> 
+  <div class="h-lights">
+    <div class="h-light"></div>
+    <div class="h-light"></div>
+    <div class="h-light"></div>
+    <div class="h-light"></div>
+    <div class="h-light"></div>
+    <div class="h-light"></div>
+  </div>
+  <div class="h-shadow"></div>
+  <div class="alt">
+    <div class="alt__front face"> </div>
+    <div class="alt__back face"> </div>
+    <div class="alt__right face"> </div>
+    <div class="alt__left face"> </div>
+    <div class="alt__top face"> 
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+    </div>
+    <div class="alt__bottom face"> </div>
+  </div>
+  <div class="alb">
+    <div class="alb__front face"> </div>
+    <div class="alb__back face"> </div>
+    <div class="alb__right face"> </div>
+    <div class="alb__left face"> </div>
+    <div class="alb__top face"> </div>
+    <div class="alb__bottom face"> </div>
+  </div>
+  <div class="arb">
+    <div class="arb__front face"> </div>
+    <div class="arb__back face"> </div>
+    <div class="arb__right face"> </div>
+    <div class="arb__left face"> </div>
+    <div class="arb__top face"> </div>
+    <div class="arb__bottom face"> </div>
+  </div>
+  <div class="blt">
+    <div class="blt__front face"> </div>
+    <div class="blt__back face"> </div>
+    <div class="blt__right face"> </div>
+    <div class="blt__left face"> </div>
+    <div class="blt__top face"> </div>
+    <div class="blt__bottom face"> </div>
+  </div>
+  <div class="blt2">
+    <div class="blt2__front face"> </div>
+    <div class="blt2__back face"> </div>
+    <div class="blt2__right face"> </div>
+    <div class="blt2__left face"> </div>
+    <div class="blt2__top face"> </div>
+    <div class="blt2__bottom face"> </div>
+  </div>
+  <div class="blb">
+    <div class="blb__front face"> </div>
+    <div class="blb__back face"> </div>
+    <div class="blb__right face"> </div>
+    <div class="blb__left face"> </div>
+    <div class="blb__top face"> </div>
+    <div class="blb__bottom face"> </div>
+  </div>
+  <div class="blb2">
+    <div class="blb2__front face"> </div>
+    <div class="blb2__back face"> </div>
+    <div class="blb2__right face"> </div>
+    <div class="blb2__left face"> </div>
+    <div class="blb2__top face"> </div>
+    <div class="blb2__bottom face"> </div>
+  </div>
+  <div class="puerta-c">
+    <div class="puerta">
+      <div class="puerta__front face"> </div>
+      <div class="puerta__back face"> </div>
+      <div class="puerta__right face"> </div>
+      <div class="puerta__left face"> </div>
+      <div class="puerta__top face"> </div>
+      <div class="puerta__bottom face"> </div>
+    </div>
+    <div class="puerta-l">
+      <div class="puerta-l__front face"> </div>
+      <div class="puerta-l__back face"> </div>
+      <div class="puerta-l__right face"> </div>
+      <div class="puerta-l__left face"> </div>
+      <div class="puerta-l__top face"> </div>
+      <div class="puerta-l__bottom face"> </div>
+    </div>
+    <div class="puerta-r">
+      <div class="puerta-r__front face"> </div>
+      <div class="puerta-r__back face"> </div>
+      <div class="puerta-r__right face"> </div>
+      <div class="puerta-r__left face"> </div>
+      <div class="puerta-r__top face"> </div>
+      <div class="puerta-r__bottom face"> </div>
+    </div>
+    <div class="puerta-t">
+      <div class="puerta-t__front face"> </div>
+      <div class="puerta-t__back face"> </div>
+      <div class="puerta-t__right face"> </div>
+      <div class="puerta-t__left face"> </div>
+      <div class="puerta-t__top face"> </div>
+      <div class="puerta-t__bottom face"> </div>
+    </div>
+  </div>
+  <div class="cuadro-l">
+    <div class="cuadro-l__front face"> </div>
+    <div class="cuadro-l__back face"> </div>
+    <div class="cuadro-l__right face"> </div>
+    <div class="cuadro-l__left face"> </div>
+    <div class="cuadro-l__top face"> </div>
+    <div class="cuadro-l__bottom face"> </div>
+  </div>
+  <div class="cuadro-r">
+    <div class="cuadro-r__front face"> </div>
+    <div class="cuadro-r__back face"> </div>
+    <div class="cuadro-r__right face"> </div>
+    <div class="cuadro-r__left face"> </div>
+    <div class="cuadro-r__top face"> </div>
+    <div class="cuadro-r__bottom face"> </div>
+  </div>
+  <div class="librero">
+    <div class="librero__front face"> </div>
+    <div class="librero__back face"> </div>
+    <div class="librero__right face"> </div>
+    <div class="librero__left face"> </div>
+    <div class="librero__top face"> </div>
+    <div class="librero__bottom face">    </div>
+  </div>
+  <div class="libros"> 
+    <div class="libro">
+      <div class="libro__front face"> </div>
+      <div class="libro__back face"> </div>
+      <div class="libro__right face"> </div>
+      <div class="libro__left face"> </div>
+      <div class="libro__top face"> </div>
+      <div class="libro__bottom face"> </div>
+    </div>
+    <div class="libro">
+      <div class="libro__front face"> </div>
+      <div class="libro__back face"> </div>
+      <div class="libro__right face"> </div>
+      <div class="libro__left face"> </div>
+      <div class="libro__top face"> </div>
+      <div class="libro__bottom face"> </div>
+    </div>
+    <div class="libro">
+      <div class="libro__front face"> </div>
+      <div class="libro__back face"> </div>
+      <div class="libro__right face"> </div>
+      <div class="libro__left face"> </div>
+      <div class="libro__top face"> </div>
+      <div class="libro__bottom face"> </div>
+    </div>
+    <div class="libro">
+      <div class="libro__front face"> </div>
+      <div class="libro__back face"> </div>
+      <div class="libro__right face"> </div>
+      <div class="libro__left face"> </div>
+      <div class="libro__top face"> </div>
+      <div class="libro__bottom face"> </div>
+    </div>
+    <div class="libro">
+      <div class="libro__front face"> </div>
+      <div class="libro__back face"> </div>
+      <div class="libro__right face"> </div>
+      <div class="libro__left face"> </div>
+      <div class="libro__top face"> </div>
+      <div class="libro__bottom face"> </div>
+    </div>
+    <div class="libro">
+      <div class="libro__front face"> </div>
+      <div class="libro__back face"> </div>
+      <div class="libro__right face"> </div>
+      <div class="libro__left face"> </div>
+      <div class="libro__top face"> </div>
+      <div class="libro__bottom face"> </div>
+    </div>
+  </div>
+  <div class="fotos"> 
+    <div class="foto">
+      <div class="foto__front face"> </div>
+      <div class="foto__back face"> </div>
+      <div class="foto__right face"> </div>
+      <div class="foto__left face"> </div>
+      <div class="foto__top face"> </div>
+      <div class="foto__bottom face"> </div>
+    </div>
+    <div class="foto">
+      <div class="foto__front face"> </div>
+      <div class="foto__back face"> </div>
+      <div class="foto__right face"> </div>
+      <div class="foto__left face"> </div>
+      <div class="foto__top face"> </div>
+      <div class="foto__bottom face"> </div>
+    </div>
+  </div>
+  <div class="cajas"> 
+    <div class="caja">
+      <div class="caja__front face"> </div>
+      <div class="caja__back face"> </div>
+      <div class="caja__right face"> </div>
+      <div class="caja__left face"> </div>
+      <div class="caja__top face"> </div>
+      <div class="caja__bottom face"> </div>
+    </div>
+    <div class="caja">
+      <div class="caja__front face"> </div>
+      <div class="caja__back face"> </div>
+      <div class="caja__right face"> </div>
+      <div class="caja__left face"> </div>
+      <div class="caja__top face"> </div>
+      <div class="caja__bottom face"> </div>
+    </div>
+    <div class="caja">
+      <div class="caja__front face"> </div>
+      <div class="caja__back face"> </div>
+      <div class="caja__right face"> </div>
+      <div class="caja__left face"> </div>
+      <div class="caja__top face"> </div>
+      <div class="caja__bottom face"> </div>
+    </div>
+  </div>
+  <div class="tv">
+    <div class="tv__front face"> </div>
+    <div class="tv__back face"> </div>
+    <div class="tv__right face"> </div>
+    <div class="tv__left face"> </div>
+    <div class="tv__top face"> </div>
+    <div class="tv__bottom face"> </div>
+  </div>
+  <div class="repisa-t">
+    <div class="repisa-t__front face"> </div>
+    <div class="repisa-t__back face"> </div>
+    <div class="repisa-t__right face"> </div>
+    <div class="repisa-t__left face"> </div>
+    <div class="repisa-t__top face"> </div>
+    <div class="repisa-t__bottom face"> </div>
+  </div>
+  <div class="repisa-b">
+    <div class="repisa-b__front face"> </div>
+    <div class="repisa-b__back face"> </div>
+    <div class="repisa-b__right face"> </div>
+    <div class="repisa-b__left face"> </div>
+    <div class="repisa-b__top face"> </div>
+    <div class="repisa-b__bottom face"> </div>
+  </div>
+  <div class="bocina-l">
+    <div class="bocina-l__front face"> </div>
+    <div class="bocina-l__back face"> </div>
+    <div class="bocina-l__right face"> </div>
+    <div class="bocina-l__left face"> </div>
+    <div class="bocina-l__top face"> </div>
+    <div class="bocina-l__bottom face"> </div>
+  </div>
+  <div class="bocina-r">
+    <div class="bocina-r__front face"> </div>
+    <div class="bocina-r__back face"> </div>
+    <div class="bocina-r__right face"> </div>
+    <div class="bocina-r__left face"> </div>
+    <div class="bocina-r__top face"> </div>
+    <div class="bocina-r__bottom face"> </div>
+  </div>
+  <div class="muro">
+    <div class="muro__front face"> </div>
+    <div class="muro__back face"> </div>
+    <div class="muro__right face"> </div>
+    <div class="muro__left face"> </div>
+    <div class="muro__top face"> </div>
+    <div class="muro__bottom face"> </div>
+  </div>
+  <div class="sillon-c">
+    <div class="sillon-b">
+      <div class="sillon-b__front face"> </div>
+      <div class="sillon-b__back face"> </div>
+      <div class="sillon-b__right face"> </div>
+      <div class="sillon-b__left face"> </div>
+      <div class="sillon-b__top face"> </div>
+      <div class="sillon-b__bottom face"> </div>
+    </div>
+    <div class="sillon-t">
+      <div class="sillon-t__front face"> </div>
+      <div class="sillon-t__back face"> </div>
+      <div class="sillon-t__right face"> </div>
+      <div class="sillon-t__left face"> </div>
+      <div class="sillon-t__top face"> </div>
+      <div class="sillon-t__bottom face"> </div>
+    </div>
+    <div class="sillon-l">
+      <div class="sillon-l__front face"> </div>
+      <div class="sillon-l__back face"> </div>
+      <div class="sillon-l__right face"> </div>
+      <div class="sillon-l__left face"> </div>
+      <div class="sillon-l__top face"> </div>
+      <div class="sillon-l__bottom face"> </div>
+    </div>
+    <div class="sillon-r">
+      <div class="sillon-r__front face"> </div>
+      <div class="sillon-r__back face"> </div>
+      <div class="sillon-r__right face"> </div>
+      <div class="sillon-r__left face"> </div>
+      <div class="sillon-r__top face"> </div>
+      <div class="sillon-r__bottom face"> </div>
+    </div>
+  </div>
+  <div class="mesa-c">
+    <div class="mesa">
+      <div class="mesa__front face"> </div>
+      <div class="mesa__back face"> </div>
+      <div class="mesa__right face"> </div>
+      <div class="mesa__left face"> </div>
+      <div class="mesa__top face"> </div>
+      <div class="mesa__bottom face"> </div>
+    </div>
+    <div class="mesa-p">
+      <div class="mesa-p__front face"> </div>
+      <div class="mesa-p__back face"> </div>
+      <div class="mesa-p__right face"> </div>
+      <div class="mesa-p__left face"> </div>
+      <div class="mesa-p__top face"> </div>
+      <div class="mesa-p__bottom face"> </div>
+    </div>
+    <div class="mesa-p">
+      <div class="mesa-p__front face"> </div>
+      <div class="mesa-p__back face"> </div>
+      <div class="mesa-p__right face"> </div>
+      <div class="mesa-p__left face"> </div>
+      <div class="mesa-p__top face"> </div>
+      <div class="mesa-p__bottom face"> </div>
+    </div>
+    <div class="mesa-p">
+      <div class="mesa-p__front face"> </div>
+      <div class="mesa-p__back face"> </div>
+      <div class="mesa-p__right face"> </div>
+      <div class="mesa-p__left face"> </div>
+      <div class="mesa-p__top face"> </div>
+      <div class="mesa-p__bottom face"> </div>
+    </div>
+    <div class="mesa-p">
+      <div class="mesa-p__front face"> </div>
+      <div class="mesa-p__back face"> </div>
+      <div class="mesa-p__right face"> </div>
+      <div class="mesa-p__left face"> </div>
+      <div class="mesa-p__top face"> </div>
+      <div class="mesa-p__bottom face"> </div>
+    </div>
+    <div class="mesa-shadow"></div>
+  </div>
+  <div class="tablet">
+    <div class="tablet__front face"> </div>
+    <div class="tablet__back face"> </div>
+    <div class="tablet__right face"> </div>
+    <div class="tablet__left face"> </div>
+    <div class="tablet__top face"> </div>
+    <div class="tablet__bottom face">    </div>
+  </div>
+</div>
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>
